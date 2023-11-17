@@ -1,6 +1,8 @@
 import { useContext, useState } from 'react'
 import { AuthContext } from '../../context/AuthContext.jsx'
 import { useNavigate } from 'react-router-dom'
+import image from '../../assets/recipeBackground.jpg'
+import './login.css'
 
 const Login = () => {
   const [email, setEmail] = useState('')
@@ -20,22 +22,29 @@ const Login = () => {
   }
 
   return (
+    <div className='login-background'>
+      <img src={image} className='background-img'/>
     <div className='login-form'>
       <form onSubmit={handleLogin}>
-        <input
+        <label className='labelEmail'> EMail:  </label>
+        <input className='inputs'
           type='email'
           placeholder='Enter Your Email'
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
-        <input
+        <label className='labelPassword'> Password:  </label>
+        <input className='inputs'
           type='password'
+          placeholder='********'
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <button type='submit'>Login</button>
+        <button className='' type='submit'>Login</button>
       </form>
     </div>
+    </div>
+    
   )
 }
 

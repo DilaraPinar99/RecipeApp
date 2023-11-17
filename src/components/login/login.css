@@ -1,0 +1,67 @@
+.login-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff6dc;
+    padding: 20px;
+    border-radius: 10px; 
+    border: 3px solid #fff6dc;
+    width: 450px; 
+    margin-left: 300px;
+
+}
+
+.labelEmail{
+    font-size: 24px;
+    color: #7c532c;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.labelPassword{
+    font-size: 24px;
+    color: #7c532c;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+
+
+.inputs{
+    background: none;
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: 22px;
+}
+
+.background-img{
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top:0;
+    object-fit: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: #9e9fa5; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .login-form button:hover {
+    background-color: #45a049;
+  }
+
+
+

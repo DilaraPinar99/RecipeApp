@@ -14,6 +14,7 @@ const AuthService = {
       localStorage.setItem('user', JSON.stringify(response.data))
     }
     return response.data
+    
   },
 
   logout: () => {

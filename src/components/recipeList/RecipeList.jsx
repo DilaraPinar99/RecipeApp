@@ -10,7 +10,6 @@ const RecipeList = () => {
 
   return (
     <div className='recipe-list-container'>
-      <h2>Recipe List</h2>
       {isLoading.read && <p>Loading...</p> }
       <div className="recipe-list">{recipes.map((recipe) => <RecipeCard {...recipe} key={recipe.id} />  )}</div>
     </div>
