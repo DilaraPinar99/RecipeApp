@@ -1,0 +1,8 @@
+/* Home page styles */
+.home {
+    padding: 2rem 3rem;
+    text-align: center;
+  }
+  .home p{
+    font-size: 1.2rem;
+  }

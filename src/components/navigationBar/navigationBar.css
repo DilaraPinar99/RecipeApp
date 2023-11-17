@@ -1,0 +1,78 @@
+.navbar {
+  background: linear-gradient(to right, #ffc6ac, #fff6dc, #c4c1a4, #9e9fa5);
+  color: white;
+  gap: 30px;
+  padding: 10px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.label {
+  color: #7c532c;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.recipePlatform {
+  display: flex;
+  font-size: 30px;
+  font-weight: bold;
+  color: #7c532c;
+  justify-content: flex-start;
+  text-align: start;
+  margin-right: auto;
+  padding-left: 15px;
+}
+
+.loginButton {
+  height: 40px;
+  width: 90px;
+  border-radius: 10px;
+  background-color: #fff6dc;
+  color: #7c532c;
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+}
+
+.light {
+  background-color: #fff;
+  color: #333;
+}
+
+.dark {
+  background-color: #333;
+  color: #fff;
+}
+
+.slider-container {
+  width: 50px;
+  height: 25px;
+  background-color: lightgray;
+  border-radius: 25px;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+.slider-button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: 2.5px;
+  left: 2.5px;
+  transition: left 0.3s ease;
+}
+
+.slider-container.dark {
+  background-color: darkgray;
+}
+
+.slider-container.dark .slider-button {
+  left: calc(100% - 22.5px);
+}
